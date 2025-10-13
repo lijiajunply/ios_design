@@ -86,7 +86,7 @@
           <!-- 卡片5：Apple官方活动 -->
           <div
               class="flex items-center justify-center">
-              <img src="/assets/img.png" class="h-40" alt=""/>
+            <img src="/assets/qrcode.png" class="h-40" alt=""/>
           </div>
 
           <!-- 卡片6：合作软件开发 -->
@@ -110,7 +110,8 @@
   </div>
 
   <div class="fixed bottom-6 right-6">
-    <button @click="exportToPng" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">
+    <button @click="exportToPng"
+            class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">
       导出为PNG
     </button>
   </div>
@@ -147,7 +148,7 @@ const exportToPng = async () => {
 </script>
 
 <style scoped>
-div{
+div {
   font-family: PingFang SC, Helvetica, sans-serif;
 }
 </style>

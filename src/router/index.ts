@@ -41,6 +41,14 @@ const routes = [
             title: '传单 - 2023版'
         }
     },
+    {
+        path: '/fan',
+        name: 'Fan',
+        component: import('../pages/Fan.vue'),
+        meta: {
+            title: '扇子'
+        }
+    },
 ]
 
 const router = createRouter({

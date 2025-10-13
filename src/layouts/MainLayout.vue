@@ -58,6 +58,9 @@
             <li class="menu-item" :class="{ active: $route.name === 'Flyer' }">
               <router-link to="/flyer" @click="closeSidebar">传单 - 2023版</router-link>
             </li>
+            <li class="menu-item" :class="{ active: $route.name === 'Fan' }">
+              <router-link to="/fan" @click="closeSidebar">扇子</router-link>
+            </li>
           </ul>
         </nav>
       </aside>
