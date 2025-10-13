@@ -86,3 +86,12 @@ h1 {
     color: #747bff;
   }
 }
+
+.jetbrains-font {
+    font-family: "Jetbrains Mono", monospace;
+}
+
+.gradient-text {
+    @apply bg-clip-text text-transparent fill-transparent;
+    background-image: -webkit-linear-gradient(-64deg, #f9bf65, #ff9977, #fc8986, #e47da6, #d37fb5, #ab8dcf, #7fa0dc);
+}

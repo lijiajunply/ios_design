@@ -4,23 +4,46 @@ const routes = [
     {
         path: '/',
         name: 'Home',
-        component: import('../pages/Home.vue')
+        component: import('../pages/Home.vue'),
+        meta: {
+            title: '首页'
+        }
     },
     {
         path: '/card-holder',
         name: 'CardHolder',
-        component: import('../pages/CardHolder.vue')
+        component: import('../pages/CardHolder.vue'),
+        meta: {
+            title: '卡套 - 2024版'
+        }
     },
     {
         path: '/fridge-magnet',
         name: 'FridgeMagnet',
-        component: import('../pages/FridgeMagnet.vue')
+        component: import('../pages/FridgeMagnet.vue'),
+        meta: {
+            title: '冰箱贴'
+        }
+    },
+    {
+        path: '/flyer',
+        name: 'Flyer',
+        component: import('../pages/Flyer.vue'),
+        meta: {
+            title: '传单 - 2023版'
+        }
     },
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes
+})
+
+// 路由守卫，设置页面标题
+router.beforeEach((to, _from, next) => {
+  document.title = to.meta.title ? `iOS Design - ${to.meta.title}` : 'iOS Design'
+  next()
 })
 
 export default router

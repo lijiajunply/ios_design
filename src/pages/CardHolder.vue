@@ -1,9 +1,8 @@
 <template>
   <div class="min-h-screen flex items-center justify-center p-4">
-
     <div class="w-full max-w-6xl flex flex-col md:flex-row justify-end gap-8">
       <!-- 第一张卡片 -->
-      <div class="w-full md:w-5/12" id="f">
+      <div class="w-full md:w-5/12" id="first">
         <div class="card-holder">
           <div class="flex mt-5 mb-7">
             <i class="light bg-[#fd6458]"></i>
@@ -31,7 +30,7 @@
       </div>
 
       <!-- 第二张卡片 -->
-      <div class="w-full md:w-5/12">
+      <div class="w-full md:w-5/12" id="second">
         <div class="card-holder">
           <div class="flex mt-5 mb-7">
             <i class="light bg-[#fd6458]"></i>
@@ -40,10 +39,11 @@
           </div>
         </div>
       </div>
-      
+
       <!-- 导出按钮 -->
       <div class="fixed bottom-6 right-6">
-        <button @click="exportToPng" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">
+        <button @click="exportToPng"
+                class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">
           导出为PNG
         </button>
       </div>
@@ -52,34 +52,48 @@
 </template>
 
 <script setup>
-import html2canvas from 'html2canvas';
+import domtoimage from 'dom-to-image';
 
 // 导出为PNG功能
 const exportToPng = async () => {
-  const element = document.querySelector('#f');
+  let element = document.querySelector('#first');
   if (element) {
     try {
-      // 使用更详细的配置来确保所有内容都被正确捕获
-      const canvas = await html2canvas(element, {
-        scale: 2, // 提高图像质量
-        useCORS: true,
-        logging: true, // 启用日志以调试问题
-        allowTaint: true,
-        // 确保所有元素都包含在内
-        scrollY: 0,
-        scrollX: 0,
-        // 添加这些选项来处理复杂的CSS
+      // 使用 dom-to-image 导出元素
+      const dataUrl = await domtoimage.toPng(element, {
+        quality: 1.0,
         width: element.offsetWidth,
         height: element.offsetHeight,
-        // 确保渐变和透明度被正确处理
-        foreignObjectRendering: false,
-        // 确保所有字体都正确渲染
-        fontSmoothing: true
+        style: {
+          transformOrigin: 'top left'
+        }
       });
 
       const link = document.createElement('a');
-      link.download = 'ios-design.png';
-      link.href = canvas.toDataURL('image/png');
+      link.download = 'ios-card-holder-first.png';
+      link.href = dataUrl;
+      link.click();
+    } catch (error) {
+      console.error('导出失败:', error);
+      alert('导出失败，请重试');
+    }
+  }
+  element = document.querySelector('#second');
+  if (element) {
+    try {
+      // 使用 dom-to-image 导出元素
+      const dataUrl = await domtoimage.toPng(element, {
+        quality: 1.0,
+        width: element.offsetWidth,
+        height: element.offsetHeight,
+        style: {
+          transformOrigin: 'top left'
+        }
+      });
+
+      const link = document.createElement('a');
+      link.download = 'ios-card-holder-second.png';
+      link.href = dataUrl;
       link.click();
     } catch (error) {
       console.error('导出失败:', error);
@@ -108,7 +122,6 @@ const exportToPng = async () => {
 }
 
 
-
 .gradient-text p {
   font-size: 42px;
   font-weight: 700;
@@ -133,11 +146,11 @@ const exportToPng = async () => {
   color: #000;
 }
 
-.dark .footer{
+.dark .footer {
   color: #fff;
 }
 
-.dark .order{
+.dark .order {
   color: #fff;
 }
 
@@ -146,17 +159,10 @@ const exportToPng = async () => {
   width: 350px;
   padding: 16px 42px 20px;
   background-color: #f3f5f7;
-  border-radius: 20px;
   position: relative;
 }
 
 .dark .card-holder {
   @apply bg-[#1d1d1d];
-}
-
-@media screen and (max-width: 768px) {
-  .card-holder {
-    border-radius: 0;
-  }
 }
 </style>

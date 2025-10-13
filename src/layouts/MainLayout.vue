@@ -52,6 +52,9 @@
             <li class="menu-item" :class="{ active: $route.name === 'FridgeMagnet' }">
               <router-link to="/fridge-magnet" @click="closeSidebar">冰箱贴</router-link>
             </li>
+            <li class="menu-item" :class="{ active: $route.name === 'Flyer' }">
+              <router-link to="/flyer" @click="closeSidebar">传单 - 2023版</router-link>
+            </li>
           </ul>
         </nav>
       </aside>
