@@ -49,6 +49,9 @@
             <li class="menu-item" :class="{ active: $route.name === 'CardHolder' }">
               <router-link to="/card-holder" @click="closeSidebar">卡套 - 2024版</router-link>
             </li>
+            <li class="menu-item" :class="{ active: $route.name === 'FridgeMagnet' }">
+              <router-link to="/fridge-magnet" @click="closeSidebar">冰箱贴</router-link>
+            </li>
           </ul>
         </nav>
       </aside>

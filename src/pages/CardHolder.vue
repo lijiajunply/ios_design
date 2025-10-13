@@ -90,8 +90,10 @@ const exportToPng = async () => {
 </script>
 
 <style scoped>
+@reference 'tailwindcss';
+
 .gradient-text {
-  background: linear-gradient(-64deg, #f9bf65, #ffab6b, #ff9977, #fc8986, #ef7e95, #e47da6, #d37fb5, #bf83c1, #ab8dcf, #9597d8, #7fa0dc, #6ca7da);
+  background: -webkit-linear-gradient(-64deg, #f9bf65, #ffab6b, #ff9977, #fc8986, #ef7e95, #e47da6, #d37fb5, #bf83c1, #ab8dcf, #9597d8, #7fa0dc, #6ca7da);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -101,13 +103,11 @@ const exportToPng = async () => {
   font-size: 8px;
   margin: 1px 0;
   text-align: center;
-  font-family: "Consolas", monospace;
+  font-family: "Cascadia Code", monospace;
   color: #000;
 }
 
-.dark .order {
-  color: #000;
-}
+
 
 .gradient-text p {
   font-size: 42px;
@@ -128,13 +128,17 @@ const exportToPng = async () => {
   position: absolute;
   bottom: 0;
   font-size: 8px;
-  font-family: "Consolas", monospace;
+  font-family: "Cascadia Code", monospace;
   margin: 10px;
   color: #000;
 }
 
-.dark .footer {
-  color: #000;
+.dark .footer{
+  color: #fff;
+}
+
+.dark .order{
+  color: #fff;
 }
 
 .card-holder {
@@ -147,7 +151,7 @@ const exportToPng = async () => {
 }
 
 .dark .card-holder {
-  background-color: #f3f5f7;
+  @apply bg-[#1d1d1d];
 }
 
 @media screen and (max-width: 768px) {
