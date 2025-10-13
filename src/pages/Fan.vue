@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import { Icon } from '@iconify/vue';
+
 </script>
 
 <style scoped>
@@ -135,125 +135,6 @@ import { Icon } from '@iconify/vue';
   top: 30%;
   left: 20%;
   transform: rotate(315deg);
-}
-
-/* 扇柄 */
-.fan-handle {
-  position: relative;
-  margin-top: -20px;
-  width: 30px;
-  height: 180px;
-}
-
-/* 柄顶装饰 */
-.handle-top {
-  position: relative;
-  width: 100%;
-  height: 40px;
-}
-
-.handle-ring {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #f9fafb, #e5e7eb);
-  border-radius: 50%;
-  box-shadow:
-      0 2px 10px rgba(0, 0, 0, 0.1),
-      inset 0 2px 4px rgba(255, 255, 255, 0.8);
-}
-
-.handle-gem {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(135deg, #ec4899, #8b5cf6);
-  border-radius: 50%;
-  box-shadow:
-      0 0 20px rgba(236, 72, 153, 0.5),
-      inset 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-/* 柄身 */
-.handle-body {
-  position: relative;
-  width: 100%;
-  height: 120px;
-  background: linear-gradient(
-      180deg,
-      #f3f4f6 0%,
-      #e5e7eb 50%,
-      #d1d5db 100%
-  );
-  border-radius: 15px;
-  box-shadow:
-      0 4px 15px rgba(0, 0, 0, 0.1),
-      inset 0 0 20px rgba(255, 255, 255, 0.5),
-      inset -2px 0 4px rgba(0, 0, 0, 0.1),
-      inset 2px 0 4px rgba(0, 0, 0, 0.1);
-}
-
-.handle-pattern {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 16px;
-  height: 40px;
-  background: linear-gradient(
-      90deg,
-      transparent 25%,
-      rgba(139, 92, 246, 0.2) 50%,
-      transparent 75%
-  );
-  border-radius: 8px;
-}
-
-.handle-pattern-2 {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 16px;
-  height: 40px;
-  background: linear-gradient(
-      90deg,
-      transparent 25%,
-      rgba(236, 72, 153, 0.2) 50%,
-      transparent 75%
-  );
-  border-radius: 8px;
-}
-
-/* 底部装饰 */
-.handle-bottom {
-  position: relative;
-  width: 100%;
-  height: 20px;
-}
-
-.tassel {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 30px;
-  background: linear-gradient(
-      180deg,
-      #ec4899,
-      transparent
-  );
-  box-shadow:
-      0 0 10px rgba(236, 72, 153, 0.3),
-      2px 0 0 rgba(139, 92, 246, 0.3),
-      -2px 0 0 rgba(59, 130, 246, 0.3);
 }
 
 /* 响应式调整 */
