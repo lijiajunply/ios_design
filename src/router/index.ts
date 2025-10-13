@@ -18,6 +18,14 @@ const routes = [
         }
     },
     {
+        path: '/custom-card-holder',
+        name: 'CustomCardHolder',
+        component: import('../pages/CustomCardHolder.vue'),
+        meta: {
+            title: '卡套 - 2024版 - 客制化'
+        }
+    },
+    {
         path: '/fridge-magnet',
         name: 'FridgeMagnet',
         component: import('../pages/FridgeMagnet.vue'),

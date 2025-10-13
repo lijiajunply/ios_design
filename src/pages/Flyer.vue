@@ -86,7 +86,7 @@
           <!-- 卡片5：Apple官方活动 -->
           <div
               class="flex items-center justify-center">
-              <img src="/assets/img.png" class="h-54 w-54"/>
+              <img src="/assets/img.png" class="h-40" alt=""/>
           </div>
 
           <!-- 卡片6：合作软件开发 -->
