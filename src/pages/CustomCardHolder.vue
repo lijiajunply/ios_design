@@ -97,11 +97,12 @@ const exportToPng = async () => {
     try {
       // 使用 dom-to-image 导出元素
       const dataUrl = await domtoimage.toPng(element, {
-        quality: 1.0,
-        width: element.offsetWidth,
-        height: element.offsetHeight,
+        quality: 0.95,
+        width: element.clientWidth * 3,
+        height: element.clientHeight * 3,
         style: {
-          transformOrigin: 'top left'
+          transform: 'scale(3)',
+          transformOrigin: 'top left',
         }
       });
 
@@ -119,11 +120,12 @@ const exportToPng = async () => {
     try {
       // 使用 dom-to-image 导出元素
       const dataUrl = await domtoimage.toPng(element, {
-        quality: 1.0,
-        width: element.offsetWidth,
-        height: element.offsetHeight,
+        quality: 0.95,
+        width: element.clientWidth * 3,
+        height: element.clientHeight * 3,
         style: {
-          transformOrigin: 'top left'
+          transform: 'scale(3)',
+          transformOrigin: 'top left',
         }
       });
 

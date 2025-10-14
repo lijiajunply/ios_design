@@ -2,40 +2,44 @@
   <div class="min-h-screen flex items-center justify-center p-4">
     <div class="w-full max-w-6xl flex flex-col md:flex-row justify-end gap-8">
       <!-- 第一张卡片 -->
-      <div class="w-full md:w-5/12" id="first">
-        <div class="card-holder">
-          <div class="flex mt-5 mb-7">
-            <i class="light bg-[#fd6458]"></i>
-            <i class="light bg-[#ffbf2b] ml-2"></i>
-            <i class="light bg-[#24cc3d] ml-2"></i>
-          </div>
-
-          <p class="order h-3"></p>
-
-          <p class="order">Steve@@Jobs-Macintosh ~ % sudo run --1984</p>
-          <p class="order">Stay hungry , Stay foolish</p>
-          <p class="order">Steve@@Jobs-Macintosh ~ % sudo Create_your_First_iOS_App</p>
-
-          <div class="flex items-center justify-center">
-            <div class="gradient-text mt-25">
-              <p>Hello!</p>
-              <p>iOS Club</p>
+      <div class="w-full md:w-5/12">
+        <div class="card-holder-parent">
+          <div class="card-holder h-full" id="first">
+            <div class="flex mt-5 mb-7">
+              <i class="light bg-[#fd6458]"></i>
+              <i class="light bg-[#ffbf2b] ml-2"></i>
+              <i class="light bg-[#24cc3d] ml-2"></i>
             </div>
-          </div>
 
-          <div class="footer">
-            Created by <span class="gradient-text">iOS Club of XAUAT</span>
+            <p class="order h-3"></p>
+
+            <p class="order">Steve@@Jobs-Macintosh ~ % sudo run --1984</p>
+            <p class="order">Stay hungry , Stay foolish</p>
+            <p class="order">Steve@@Jobs-Macintosh ~ % sudo Create_your_First_iOS_App</p>
+
+            <div class="flex items-center justify-center">
+              <div class="gradient-text mt-25">
+                <p>Hello!</p>
+                <p>iOS Club</p>
+              </div>
+            </div>
+
+            <div class="footer">
+              Created by <span class="gradient-text">iOS Club of XAUAT</span>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- 第二张卡片 -->
-      <div class="w-full md:w-5/12" id="second">
-        <div class="card-holder">
-          <div class="flex mt-5 mb-7">
-            <i class="light bg-[#fd6458]"></i>
-            <i class="light bg-[#ffbf2b] ml-2"></i>
-            <i class="light bg-[#24cc3d] ml-2"></i>
+      <div class="w-full md:w-5/12">
+        <div class="card-holder-parent">
+          <div class="card-holder h-full" id="second">
+            <div class="flex mt-5 mb-7">
+              <i class="light bg-[#fd6458]"></i>
+              <i class="light bg-[#ffbf2b] ml-2"></i>
+              <i class="light bg-[#24cc3d] ml-2"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -61,11 +65,12 @@ const exportToPng = async () => {
     try {
       // 使用 dom-to-image 导出元素
       const dataUrl = await domtoimage.toPng(element, {
-        quality: 1.0,
-        width: element.offsetWidth,
-        height: element.offsetHeight,
+        quality: 0.95,
+        width: element.clientWidth * 3,
+        height: element.clientHeight * 3,
         style: {
-          transformOrigin: 'top left'
+          transform: 'scale(3)',
+          transformOrigin: 'top left',
         }
       });
 
@@ -83,11 +88,12 @@ const exportToPng = async () => {
     try {
       // 使用 dom-to-image 导出元素
       const dataUrl = await domtoimage.toPng(element, {
-        quality: 1.0,
-        width: element.offsetWidth,
-        height: element.offsetHeight,
+        quality: 0.95,
+        width: element.clientWidth * 3,
+        height: element.clientHeight * 3,
         style: {
-          transformOrigin: 'top left'
+          transform: 'scale(3)',
+          transformOrigin: 'top left',
         }
       });
 
@@ -154,9 +160,12 @@ const exportToPng = async () => {
   color: #fff;
 }
 
+.card-holder-parent {
+  height: 34.375rem;
+  width: 21.875rem;
+}
+
 .card-holder {
-  height: 550px;
-  width: 350px;
   padding: 16px 42px 20px;
   background-color: #f3f5f7;
   position: relative;

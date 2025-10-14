@@ -1,7 +1,6 @@
 <template>
-  <div class="text-center text-2xl block md:hidden mt-18">仅电脑端查看</div>
-  <div id="fridge-magnet" class="m-10 items-center justify-center hidden md:flex">
-    <div class="max-w-4xl bg-gradient-to-r from-indigo-900 via-25% via-violet-950 to-gray-950">
+  <div class="mt-10 items-center justify-center flex">
+    <div id="fridge-magnet" class="max-w-4xl bg-gradient-to-r from-indigo-900 via-25% via-violet-950 to-gray-950">
       <div class="flex w-full pt-6">
         <div class="flex-1 px-6">
           <div class="flex items-center space-x-5">
@@ -43,13 +42,8 @@
       <stop offset="75%" style="stop-color:oklch(35.9% 0.144 278.697);stop-opacity:1"/>
       <stop offset="100%" style="stop-color:oklch(55.3% 0.195 38.402);stop-opacity:1"/>
     </linearGradient>
-
-    <!-- 渐变外阴影滤镜 -->
-    <!--    <filter id="gradientShadow" x="-50%" y="-50%" width="200%" height="200%">-->
-    <!--      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="oklch(29.3% 0.066 243.157)" flood-opacity="0.6"/>-->
-    <!--    </filter>-->
   </defs>
-          <g fill="url(#coldGradient)" filter="url(#gradientShadow)">
+          <g fill="url(#coldGradient)">
     <path d="M84.038,65.462c0.117-0.399,0.238-0.796,0.341-1.205c4.402-17.539-6.342-38.275-24.523-49.193
       c7.968,10.801,11.49,23.883,8.36,35.324c-0.279,1.02-0.615,2-0.986,2.952c-0.403-0.264-0.91-0.565-1.591-0.94
       c0,0-18.086-11.167-37.688-30.918c-0.514-0.519,10.453,15.675,22.899,28.824C44.987,47.014,28.646,35.124,18.3,25.655
@@ -83,9 +77,13 @@ const exportToPng = async () => {
     try {
       // 使用 dom-to-image 导出元素
       const dataUrl = await domtoimage.toPng(element, {
-        quality: 1.0,
-        width: element.offsetWidth,
-        height: element.offsetHeight,
+        quality: 0.95,
+        width: element.clientWidth * 3,
+        height: element.clientHeight * 3,
+        style: {
+          transform: 'scale(3)',
+          transformOrigin: 'top left',
+        }
       });
 
       const link = document.createElement('a');

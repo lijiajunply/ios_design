@@ -25,11 +25,6 @@
       <stop offset="90.9%" stop-color="#7fa0dc"/>
       <stop offset="100%" stop-color="#6ca7da"/>
     </linearGradient>
-
-    <!-- 渐变外阴影滤镜 -->
-    <!--    <filter id="gradientShadow" x="-50%" y="-50%" width="200%" height="200%">-->
-    <!--      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="oklch(29.3% 0.066 243.157)" flood-opacity="0.6"/>-->
-    <!--    </filter>-->
   </defs>
             <g fill="url(#coldGradient)">
     <path d="M84.038,65.462c0.117-0.399,0.238-0.796,0.341-1.205c4.402-17.539-6.342-38.275-24.523-49.193
@@ -142,13 +137,13 @@ const exportToPng = async () => {
   const element = document.querySelector('#flyer');
   if (element) {
     try {
-      // 使用 dom-to-image 导出元素
       const dataUrl = await domtoimage.toPng(element, {
-        quality: 1.0,
-        width: element.offsetWidth,
-        height: element.offsetHeight,
+        quality: 0.95,
+        width: element.clientWidth * 3,
+        height: element.clientHeight * 3,
         style: {
-          transformOrigin: 'top left'
+          transform: 'scale(3)',
+          transformOrigin: 'top left',
         }
       });
 
