@@ -13,14 +13,23 @@
   <defs>
     <linearGradient id="coldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#f9bf65"/>
-      <stop offset="16.6%" stop-color="#ff9977"/>
-      <stop offset="33.2%" stop-color="#fc8986"/>
-      <stop offset="49.8%" stop-color="#e47da6"/>
-      <stop offset="66.4%" stop-color="#d37fb5"/>
-      <stop offset="83%" stop-color="#ab8dcf"/>
-      <stop offset="100%" stop-color="#7fa0dc"/>
+      <stop offset="9.09%" stop-color="#ffab6b"/>
+      <stop offset="18.18%" stop-color="#ff9977"/>
+      <stop offset="27.27%" stop-color="#fc8986"/>
+      <stop offset="36.36%" stop-color="#ef7e95"/>
+      <stop offset="45.45%" stop-color="#e47da6"/>
+      <stop offset="54.54%" stop-color="#d37fb5"/>
+      <stop offset="63.63%" stop-color="#bf83c1"/>
+      <stop offset="72.72%" stop-color="#ab8dcf"/>
+      <stop offset="81.81%" stop-color="#9597d8"/>
+      <stop offset="90.9%" stop-color="#7fa0dc"/>
+      <stop offset="100%" stop-color="#6ca7da"/>
     </linearGradient>
 
+    <!-- 渐变外阴影滤镜 -->
+    <!--    <filter id="gradientShadow" x="-50%" y="-50%" width="200%" height="200%">-->
+    <!--      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="oklch(29.3% 0.066 243.157)" flood-opacity="0.6"/>-->
+    <!--    </filter>-->
   </defs>
             <g fill="url(#coldGradient)">
     <path d="M84.038,65.462c0.117-0.399,0.238-0.796,0.341-1.205c4.402-17.539-6.342-38.275-24.523-49.193
