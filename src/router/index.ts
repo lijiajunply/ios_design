@@ -10,7 +10,7 @@ const routes = [
             {
                 path: '',
                 name: 'Home',
-                component: import('../pages/Home.vue'),
+                component: () => import('../pages/Home.vue'),
                 meta: {
                     title: '首页'
                 }
@@ -18,7 +18,7 @@ const routes = [
             {
                 path: 'card-holder',
                 name: 'CardHolder',
-                component: import('../pages/CardHolder.vue'),
+                component: () => import('../pages/CardHolder.vue'),
                 meta: {
                     title: '卡套 - 2024版'
                 }
@@ -26,7 +26,7 @@ const routes = [
             {
                 path: 'custom-card-holder',
                 name: 'CustomCardHolder',
-                component: import('../pages/CustomCardHolder.vue'),
+                component: () => import('../pages/CustomCardHolder.vue'),
                 meta: {
                     title: '卡套 - 2024版 - 客制化'
                 }
@@ -34,7 +34,7 @@ const routes = [
             {
                 path: 'fridge-magnet',
                 name: 'FridgeMagnet',
-                component: import('../pages/FridgeMagnet.vue'),
+                component: () => import('../pages/FridgeMagnet.vue'),
                 meta: {
                     title: '冰箱贴'
                 }
@@ -42,7 +42,7 @@ const routes = [
             {
                 path: 'flyer',
                 name: 'Flyer',
-                component: import('../pages/Flyer.vue'),
+                component: () => import('../pages/Flyer.vue'),
                 meta: {
                     title: '传单 - 2023版'
                 }
@@ -50,7 +50,7 @@ const routes = [
             {
                 path: 'fan',
                 name: 'Fan',
-                component: import('../pages/Fan.vue'),
+                component: () => import('../pages/Fan.vue'),
                 meta: {
                     title: '扇子'
                 }
