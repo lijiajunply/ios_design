@@ -81,6 +81,7 @@
 </template>
 
 <script setup lang="ts">
+import {RouterView} from "vue-router";
 import {useRoute} from 'vue-router'
 import {ref, onMounted, onUnmounted} from 'vue'
 
