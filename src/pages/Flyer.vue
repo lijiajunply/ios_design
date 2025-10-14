@@ -6,7 +6,32 @@
 
         <!-- 头部创意爆发图形区域 -->
         <div class="pt-16 pb-12 flex items-center justify-center">
-          <img src="/assets/FridgeMagnet.png" class="" alt="">
+          <svg x="0px"
+               y="0px"
+               width="360px" height="360px" viewBox="0 0 106.063 106.063"
+               xml:space="preserve">
+  <defs>
+    <linearGradient id="coldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f9bf65"/>
+      <stop offset="16.6%" stop-color="#ff9977"/>
+      <stop offset="33.2%" stop-color="#fc8986"/>
+      <stop offset="49.8%" stop-color="#e47da6"/>
+      <stop offset="66.4%" stop-color="#d37fb5"/>
+      <stop offset="83%" stop-color="#ab8dcf"/>
+      <stop offset="100%" stop-color="#7fa0dc"/>
+    </linearGradient>
+
+  </defs>
+            <g fill="url(#coldGradient)">
+    <path d="M84.038,65.462c0.117-0.399,0.238-0.796,0.341-1.205c4.402-17.539-6.342-38.275-24.523-49.193
+      c7.968,10.801,11.49,23.883,8.36,35.324c-0.279,1.02-0.615,2-0.986,2.952c-0.403-0.264-0.91-0.565-1.591-0.94
+      c0,0-18.086-11.167-37.688-30.918c-0.514-0.519,10.453,15.675,22.899,28.824C44.987,47.014,28.646,35.124,18.3,25.655
+      c1.271,2.12,2.783,4.161,4.444,6.126c8.64,10.956,19.906,24.475,33.404,34.855c-9.484,5.804-22.885,6.255-36.227,0.006
+      c-3.3-1.547-6.403-3.413-9.274-5.533c5.648,9.034,14.347,16.828,24.934,21.379c12.625,5.426,25.18,5.058,34.531,0.089l-0.007,0.011
+      c0.032-0.02,0.067-0.041,0.1-0.061c0.42-0.225,0.836-0.457,1.242-0.7c4.517-2.319,13.331-4.607,18.067,4.609
+      c1.166,2.268,3.645-9.752-5.468-20.965C84.043,65.467,84.041,65.465,84.038,65.462z"/>
+  </g>
+</svg>
         </div>
 
         <!-- 标题区域 -->
@@ -75,7 +100,7 @@
               <div class="w-20 h-20 flex items-center justify-center text-green-400">
                 <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9 8s9 3.582 9 8z"/>
                 </svg>
               </div>
               <h3 class="text-xl font-semibold text-green-300">与Apple结伴</h3>
