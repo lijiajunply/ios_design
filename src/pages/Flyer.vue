@@ -21,13 +21,14 @@
 
         <!-- 特性卡片网格 -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <!-- 卡片1：Apple×西建大 -->
           <div
               class="group relative backdrop-blur-sm rounded-2xl p-8">
             <div class="flex flex-col items-center text-center space-y-4">
               <div class="w-20 h-20 flex items-center justify-center text-cyan-400">
                 <Icon icon="heroicons:academic-cap-20-solid" class="w-16 h-16" />
               </div>
-              <h3 class="text-xl font-semibold text-cyan-300">Apple官方×西建大</h3>
+              <h3 class="text-xl font-semibold text-cyan-300">Apple官方 × 西建大</h3>
               <p class="text-gray-300 text-sm">最大的创新创业社团</p>
             </div>
           </div>
@@ -39,12 +40,12 @@
               <div class="w-20 h-20 flex items-center justify-center text-purple-400">
                 <Icon icon="lucide:code-xml" class="w-16 h-16" />
               </div>
-              <h3 class="text-xl font-semibold text-purple-300">零基础学编程</h3>
+              <h3 class="text-xl font-semibold text-purple-300">零基础？没在怕的</h3>
               <p class="text-gray-300 text-sm">学姐学长手把手教编程</p>
             </div>
           </div>
 
-          <!-- 卡片3：不只是Apple -->
+          <!-- 卡片3：实际项目开发经验 -->
           <div
               class="group relative backdrop-blur-sm rounded-2xl p-8">
             <div class="flex flex-col items-center text-center space-y-4">
@@ -56,33 +57,34 @@
             </div>
           </div>
 
-          <!-- 卡片4：与Apple结伴 -->
+          <!-- 卡片4：多样化活动 -->
           <div
               class="group relative backdrop-blur-sm rounded-2xl p-8">
             <div class="flex flex-col items-center text-center space-y-4">
               <div class="w-20 h-20 flex items-center justify-center text-green-400">
                 <Icon icon="heroicons:chat-bubble-left-ellipsis-solid" class="w-16 h-16" />
               </div>
-              <h3 class="text-xl font-semibold text-green-300">与Apple结伴</h3>
-              <p class="text-gray-300 text-sm">专家与学者的交流讨论</p>
+              <h3 class="text-xl font-semibold text-green-300">精彩活动，应接不暇</h3>
+              <p class="text-gray-300 text-sm">不止技术讲座、最新数码展</p>
             </div>
           </div>
 
           <!-- 卡片5：Apple官方活动 -->
           <div
-              class="flex items-center justify-center">
-            <img src="/assets/qrcode.png" class="h-40" alt=""/>
+              class="flex flex-col items-center justify-center">
+            <img src="/assets/qrcode.png" class="h-32" alt="" crossorigin="anonymous"/>
+            <p class="text-gray-300 text-sm font-semibold mt-3">速速扫码加入</p>
           </div>
 
-          <!-- 卡片6：合作软件开发 -->
+          <!-- 卡片6：竞赛资源 -->
           <div
               class="group relative backdrop-blur-sm rounded-2xl p-8">
             <div class="flex flex-col items-center text-center space-y-4">
               <div class="w-20 h-20 flex items-center justify-center text-blue-400">
                 <Icon icon="heroicons:bolt-solid" class="w-16 h-16" />
               </div>
-              <h3 class="text-xl font-semibold text-blue-300">合作软件开发</h3>
-              <p class="text-gray-300 text-sm">团队编程共享成果</p>
+              <h3 class="text-xl font-semibold text-blue-300">不是纸上谈兵</h3>
+              <p class="text-gray-300 text-sm">组队协作，开源项目，真实开发</p>
             </div>
           </div>
 
