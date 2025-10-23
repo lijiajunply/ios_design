@@ -1,6 +1,6 @@
 <template>
   <div class="mt-10 items-center justify-center flex">
-    <div id="fridge-magnet" class="max-w-4xl bg-gradient-to-r from-indigo-900 via-25% via-violet-950 to-gray-950">
+    <div id="fridge-magnet" class="max-w-4xl bg-gradient-to-r from-indigo-900 via-25% via-violet-950 to-gray-950 rounded-3xl">
       <div class="flex w-full pt-6">
         <div class="flex-1 px-6">
           <div class="flex items-center space-x-5">
