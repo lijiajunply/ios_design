@@ -41,7 +41,7 @@
                 <Icon icon="lucide:code-xml" class="w-16 h-16" />
               </div>
               <h3 class="text-xl font-semibold text-purple-300">零基础？没在怕的</h3>
-              <p class="text-gray-300 text-sm">学姐学长手把手教编程</p>
+              <p class="text-gray-300 text-sm">学长学姐手把手，代码变现实</p>
             </div>
           </div>
 
@@ -64,8 +64,8 @@
               <div class="w-20 h-20 flex items-center justify-center text-green-400">
                 <Icon icon="heroicons:chat-bubble-left-ellipsis-solid" class="w-16 h-16" />
               </div>
-              <h3 class="text-xl font-semibold text-green-300">精彩活动，应接不暇</h3>
-              <p class="text-gray-300 text-sm">不止技术讲座、最新数码展</p>
+              <h3 class="text-xl font-semibold text-green-300">和 Apple 一起玩</h3>
+              <p class="text-gray-300 text-sm">官方活动，大咖讲座，酷玩数码</p>
             </div>
           </div>
 
